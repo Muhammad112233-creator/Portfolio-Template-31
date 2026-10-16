@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="FORGEHAUS — digital studio template">
+  <defs>
+    <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#25b895">
+        <animate attributeName="stop-color" values="#25b895;#3bd6ff;#8a7bff;#ff6fb5;#ffb25e;#e5f45c;#25b895" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#3bd6ff">
+        <animate attributeName="stop-color" values="#3bd6ff;#8a7bff;#ff6fb5;#ffb25e;#e5f45c;#25b895;#3bd6ff" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#8a7bff">
+        <animate attributeName="stop-color" values="#8a7bff;#ff6fb5;#ffb25e;#e5f45c;#25b895;#3bd6ff;#8a7bff" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.4 0; 0.4 0; -0.4 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="fadebg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b1d1f"/>
+      <stop offset="100%" stop-color="#141516"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#232629" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#fadebg)"/>
+  <rect width="1200" height="300" fill="url(#grid)" opacity="0.5"/>
+  <rect x="14" y="14" width="1172" height="272" rx="4" fill="none" stroke="#313537" stroke-width="1.5" stroke-dasharray="8 6">
+    <animate attributeName="stroke-dashoffset" values="0;56" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- orbit dot -->
+  <circle r="5" fill="url(#rainbow)" filter="url(#glow)">
+    <animateMotion dur="7s" repeatCount="indefinite" path="M1090,60 a70,34 0 1,1 -0.1,0 z"/>
+  </circle>
+
+  <text x="70" y="84" font-family="ui-monospace,Consolas,monospace" font-size="17" letter-spacing="6" fill="#9bacae">
+    FULL-SERVICE DIGITAL STUDIO TEMPLATE
+    <animate attributeName="fill" values="#9bacae;#25b895;#9bacae" dur="5s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="64" y="180" font-family="'Poppins',Verdana,sans-serif" font-size="88" font-weight="700" letter-spacing="4" fill="url(#rainbow)" filter="url(#glow)">FORGEHAUS</text>
+  <text x="660" y="146" font-family="'Poppins',Verdana,sans-serif" font-size="26" font-weight="600" fill="#494f52">®</text>
+
+  <text x="70" y="232" font-family="ui-monospace,Consolas,monospace" font-size="20" fill="#e8ebeb">
+    building resonance — html · css · vanilla js
+    <animate attributeName="opacity" values="1;.55;1" dur="3.2s" repeatCount="indefinite"/>
+  </text>
+
+  <rect x="70" y="252" width="520" height="4" rx="2" fill="url(#rainbow)">
+    <animate attributeName="width" values="180;560;180" dur="5s" repeatCount="indefinite"/>
+  </rect>
+</svg>

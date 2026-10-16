@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-label="footer banner">
+  <defs>
+    <linearGradient id="fw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#25b895">
+        <animate attributeName="stop-color" values="#25b895;#3bd6ff;#8a7bff;#ff6fb5;#25b895" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#8a7bff">
+        <animate attributeName="stop-color" values="#8a7bff;#ff6fb5;#ffb25e;#25b895;#8a7bff" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#25b895">
+        <animate attributeName="stop-color" values="#25b895;#3bd6ff;#8a7bff;#ff6fb5;#25b895" dur="9s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="120" fill="#141516"/>
+  <path id="wave" d="M0,86 C150,60 300,112 450,86 C600,60 750,112 900,86 C1050,60 1200,112 1350,86" fill="none" stroke="url(#fw)" stroke-width="2.5" opacity="0.85">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -150 8; 0 0" dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0,96 C150,74 300,120 450,96 C600,74 750,120 900,96 C1050,74 1200,120 1350,96" fill="none" stroke="url(#fw)" stroke-width="1.5" opacity="0.45">
+    <animateTransform attributeName="transform" type="translate" values="-120 0; 0 -6; -120 0" dur="7.5s" repeatCount="indefinite"/>
+  </path>
+
+  <text x="42" y="52" font-family="ui-monospace,Consolas,monospace" font-size="22" fill="#e8ebeb">
+    © FORGEHAUS — forged by hand, shipped with pride
+  </text>
+  <text x="42" y="52" font-family="ui-monospace,Consolas,monospace" font-size="22" fill="url(#fw)">
+    © FORGEHAUS
+    <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite"/>
+  </text>
+  <text x="1030" y="52" font-family="ui-monospace,Consolas,monospace" font-size="16" fill="#494f52">v1.0 — mit liebe</text>
+</svg>

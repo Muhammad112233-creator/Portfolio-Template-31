@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="14" viewBox="0 0 1200 14" role="img" aria-label="divider">
+  <defs>
+    <linearGradient id="dv" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#25b895">
+        <animate attributeName="stop-color" values="#25b895;#3bd6ff;#8a7bff;#ff6fb5;#ffb25e;#e5f45c;#25b895" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="33%" stop-color="#3bd6ff">
+        <animate attributeName="stop-color" values="#3bd6ff;#8a7bff;#ff6fb5;#ffb25e;#e5f45c;#25b895;#3bd6ff" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="66%" stop-color="#ff6fb5">
+        <animate attributeName="stop-color" values="#ff6fb5;#ffb25e;#e5f45c;#25b895;#3bd6ff;#8a7bff;#ff6fb5" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#25b895">
+        <animate attributeName="stop-color" values="#25b895;#3bd6ff;#8a7bff;#ff6fb5;#ffb25e;#e5f45c;#25b895" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+  <line x1="0" y1="7" x2="1200" y2="7" stroke="url(#dv)" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 18">
+    <animate attributeName="stroke-dashoffset" values="0;40" dur="1.6s" repeatCount="indefinite"/>
+  </line>
+  <circle r="4" fill="url(#dv)">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M10,7 H1190 H10"/>
+  </circle>
+</svg>
